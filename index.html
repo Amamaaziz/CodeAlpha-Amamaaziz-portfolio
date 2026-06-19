@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amama Aziz | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="bgCanvas"></canvas>
+    
+    <nav>
+        <img src="logo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li> <li><a href="#Skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#Certificates">Certificates</a></li> 
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="Home">
+            <div class="hero-wrapper">
+                <div class="intro">
+                    <h3>Hi! I am</h3>
+                    <h2>Amama Aziz</h2>
+                    <p>A Computer Science student at MNSUAM with excellent grades and a solid foundation in frontend development, eager for professional experience, exposure, and continuous learning.</p>
+                    <a href="#Projects" class="cta-btn">View My Work <i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/amama-aziz" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/amama._aziz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="About">
+            <div class="section">
+                <h2>About me</h2>
+                <div class="card">
+                    <p>I am currently a 6th-semester Computer Science student at MNSUAM. I am committed to continuously strengthening my technical skills, taking initiative, and contributing effectively within a team environment.</p>
+                    <p>Seeking an opportunity where I can deliver quality work, embrace responsibility, and grow into a dedicated software professional.</p> 
+                </div>
+            </div>  
+        </div>
+
+        <section id="Projects">
+            <h1>Projects</h1>
+            <div class="skill">
+                <div class="card1">
+                    <h3>To-Do List</h3>
+                    <p style="color: #94A3B8; margin-top: 15px; margin-bottom: 25px;">A clean, intuitive productivity application designed to manage everyday tasks. Built with a focus on seamless user experience, responsive layout structuring, and efficient state handling frameworks.</p>
+                    <div>
+                        <a href="https://your-todo-link.vercel.app" target="_blank" rel="noopener" class="project-btn">
+                            View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <h3>Music Player</h3>
+                    <p style="color: #94A3B8; margin-top: 15px; margin-bottom: 25px;">A custom web-based music streaming interface featuring layout mechanics for playlist management, active track nodes, and volume adjustments wrapped in an elegant dark interface.</p>
+                    <div>
+                        <a href="https://aura-player-snowy.vercel.app" target="_blank" rel="noopener" class="project-btn">
+                            View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Skills">
+            <h1>Skills</h1>
+            <div class="skill">
+                <div class="card1">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>MongoDB Atlas</li>
+                        <li>UI Designing</li>
+                    </ul>
+                </div>
+                <div class="card1">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Leadership & Team Management</li>
+                        <li>Time Management</li>
+                        <li>Strong Presentation Skills</li>
+                        <li>Thrives Under Pressure</li>
+                        <li>Good Communication Skills</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h1>Education</h1>
+            <div class="ed">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <span class="tag">2023 - 2027</span>
+                        <p class="degree">BS Computer Science</p>
+                        <p class="uni">MNSUAM</p>
+                        <p class="stat"><strong>CGPA: 3.9 / 4.0</strong></p>
+                        <p class="current">Currently in 6th semester</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <span class="tag">2020 - 2022</span>
+                        <p class="degree">Intermediate</p>
+                        <p class="uni">Admire College Multan</p>
+                        <p class="stat"><strong>Marks: 980 / 1100</strong></p>
+                    </div>               
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <span class="tag">2018 - 2020</span>
+                        <p class="degree">Matriculation</p>
+                        <p class="uni">Aziz Public Model School</p>
+                        <p class="stat"><strong>Marks: 1013 / 1100</strong></p>
+                    </div>               
+                </div>                
+            </div>
+        </section>
+
+        <section id="Certificates">
+            <h1>Certificates</h1>
+            <div class="ed">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content" onclick="openModal('knn-cert.png')" style="cursor: pointer;">
+                        <span class="tag">May 17, 2026</span>
+                        <p class="degree">KNN Algorithm in Python and R</p>
+                        <p class="uni">Successfully completed the course requirements and mastered KNN implementations.</p>
+                        <p class="stat"><strong>Analytics Vidhya</strong></p>
+                        <p class="current"><i class="fa-regular fa-image"></i> Click to view certificate image</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content" onclick="openModal('web certificate.png')" style="cursor: pointer;">
+                        <span class="tag">April 30, 2026</span>
+                        <p class="degree">Web Development Fundamentals</p>
+                        <p class="uni">Successfully completed the course requirements and mastered web development concepts.</p>
+                        <p class="stat"><strong>Arch Tech</strong></p>
+                        <p class="current"><i class="fa-regular fa-image"></i> Click to view certificate image</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <h1>Contact</h1>
+            <div class="contact">
+                <p class="touch">Get in touch</p>
+                <div class="con">
+                    <div class="info-item">
+                        <a href="https://www.linkedin.com/in/amama-aziz" target="_blank" rel="noopener" class="circle" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <h4>LinkedIn</h4>
+                    </div>
+                    <div class="info-item">
+                        <div class="circle"><i class="fa-solid fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>amamaazizchishtie@gmail.com</p>
+                    </div>                    
+                    <div class="info-item">
+                        <a href="https://github.com/" target="_blank" rel="noopener" class="circle" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <h4>GitHub</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="certModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01" alt="Certificate Preview">
+    </div>
+
+    <a href="amama_aziz_cv.pdf" download="Amama-Aziz-CV.pdf" class="resume-fab" id="resumeFab" aria-label="Download Resume">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <span class="fab-text">CV</span>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Developed by <span class="footer-name">Amama Aziz</span>. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            document.getElementById("certModal").style.display = "block";
+            document.getElementById("img01").src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById("certModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            let modal = document.getElementById("certModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".content");
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let particlesArray = [];
+        const numberOfParticles = 65; 
+
+        let interactionPoint = { x: null, y: null, radius: 130 };
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        window.addEventListener('mousemove', function(event) {
+            interactionPoint.x = event.clientX;
+            interactionPoint.y = event.clientY;
+        });
+
+        window.addEventListener('touchmove', function(event) {
+            if(event.touches.length > 0) {
+                interactionPoint.x = event.touches[0].clientX;
+                interactionPoint.y = event.touches[0].clientY;
+            }
+        }, { passive: true });
+
+        window.addEventListener('mouseout', function() { interactionPoint.x = null; interactionPoint.y = null; });
+        window.addEventListener('touchend', function() { interactionPoint.x = null; interactionPoint.y = null; });
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1; 
+                this.speedX = (Math.random() * 0.4) - 0.2;
+                this.speedY = (Math.random() * 0.4) - 0.2;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x < 0 || this.x > canvas.width) this.speedX = -this.speedX;
+                if (this.y < 0 || this.y > canvas.height) this.speedY = -this.speedY;
+
+                if (interactionPoint.x != null && interactionPoint.y != null) {
+                    let dx = this.x - interactionPoint.x;
+                    let dy = this.y - interactionPoint.y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < interactionPoint.radius) {
+                        let force = (interactionPoint.radius - distance) / interactionPoint.radius;
+                        this.x += (dx / distance) * force * 4;
+                        this.y += (dy / distance) * force * 4;
+                    }
+                }
+            }
+
+            draw() {
+                ctx.fillStyle = 'rgba(56, 189, 248, 0.25)'; 
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            particlesArray = [];
+            for (let i = 0; i < numberOfParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+        init();
+
+        function connectNodes() {
+            for (let a = 0; a < particlesArray.length; a++) {
+                for (let b = a; b < particlesArray.length; b++) {
+                    let dx = particlesArray[a].x - particlesArray[b].x;
+                    let dy = particlesArray[a].y - particlesArray[b].y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 110) {
+                        let opacityValue = (1 - (distance / 110)) * 0.12;
+                        ctx.strokeStyle = `rgba(56, 189, 248, ${opacityValue})`;
+                        ctx.lineWidth = 0.8;
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+            }
+            connectNodes();
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        const resumeFab = document.getElementById('resumeFab');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) { resumeFab.classList.add('visible'); } 
+            else { resumeFab.classList.remove('visible'); }
+        });
+    </script>
+</body>
+</html>
