@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amama Aziz — Computer Science Portfolio</title>
+    <title>Amama Aziz — Frontend &amp; Computer Science Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
@@ -14,286 +14,313 @@
 <canvas id="bgCanvas"></canvas>
 <div class="bg-vignette"></div>
 
-<header>
-    <nav class="nav">
-        <div class="logo-wrapper">
-            <img src="logo.png" alt="Amama Aziz Logo" class="logo" onerror="this.style.display='none'">
-            <a href="#" class="logo-fallback">Amama <em>Aziz</em></a>
+<header class="header-floating">
+    <nav class="nav-container">
+        <div class="logo-group">
+            <a href="#" class="brand-logo">AMAMA AZIZ</a>
         </div>
         
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M2 5H16M2 9H16M2 13H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+        <button class="menu-trigger" id="navToggle" aria-label="Toggle Navigation Sheet" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
         </button>
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <ul class="nav-sheet" id="navLinks">
+            <li><a href="#about" class="sheet-link">Overview</a></li>
+            <li><a href="#projects" class="sheet-link">Personal Ventures</a></li>
+            <li><a href="#skills" class="sheet-link">Capabilities</a></li>
+            <li><a href="#education" class="sheet-link">Education</a></li>
+            <li><a href="#experience" class="sheet-link">Credentials</a></li>
+            <li><a href="#contact" class="action-link-cta">Connect</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section class="hero">
-        <div class="wrap">
-            <div class="hero-grid">
-                <div>
-                    <span class="hero-index">Portfolio · 2026</span>
-                    <h1>Computer science student building <span class="it">responsive</span> frontend interfaces.</h1>
-                </div>
-                <div class="hero-side">
-                    <p>BS Computer Science student at MNSUAM with a solid foundation in frontend development, eager for professional experience, exposure, and continuous learning.</p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-filled">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    <section class="hero-split">
+        <div class="hero-canvas-wrap">
+            <div class="hero-core-content">
+                <div class="badge-tag">Available For Engineering Roles</div>
+                <h1 class="display-headline">Building high-performance interactive interfaces through clean code geometry.</h1>
+            </div>
+            
+            <div class="hero-footer-grid">
+                <div class="hero-bio-summary">
+                    <p>BS Computer Science student at MNSUAM specializing in responsive frontend environments, micro-interactions, and pristine state handling patterns.</p>
+                    <div class="action-cluster">
+                        <a href="#projects" class="ui-btn ui-btn-solid">Explore Work</a>
+                        <a href="#contact" class="ui-btn ui-btn-outline">Start Conversation</a>
                     </div>
                 </div>
-            </div>
-            <div class="hero-meta-row">
-                <div class="hero-meta-item"><span class="num">6th</span><span class="lbl">Semester, BS CS</span></div>
-                <div class="hero-meta-item"><span class="num">3.90</span><span class="lbl">Current CGPA</span></div>
-                <div class="num-wrapper hero-meta-item">
-                    <span class="num">02</span><span class="lbl">Projects deployed</span>
-                </div>
-                <div class="hero-meta-item"><span class="num">03</span><span class="lbl">Certifications</span></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="wrap">
-            <div class="section-head reveal">
-                <div>
-                    <span class="section-tag">01 — About</span>
-                    <h2>Background & Focus</h2>
-                </div>
-                <p class="section-note">A snapshot of my academic path and career ambitions.</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-col reveal">
-                    <p>I am currently a 7th-semester <strong>Computer Science</strong> student at MNSUAM. I am deeply committed to continuously strengthening my technical skills, taking ownership of development features, and collaborating effectively within structural engineering teams.</p>
-                    <p>I look forward to securing an environment where I can deliver high-quality code, embrace architecture responsibilities, and grow continuously into a dedicated software professional.</p>
-                </div>
-                <div class="about-divider"></div>
-                <div class="about-col reveal">
-                    <div class="focus-list">
-                        <div class="focus-item"><span>Frontend Engineering</span><span>HTML5 / CSS3 Layouts</span></div>
-                        <div class="focus-item"><span>Data Infrastructure</span><span>MongoDB Atlas</span></div>
-                        <div class="focus-item"><span>User Interface Design</span><span>Responsive UI Frameworks</span></div>
-                        <div class="focus-item"><span>Academic Standing</span><span>CGPA: 3.90 / 4.00</span></div>
+                
+                <div class="metrics-panel-block">
+                    <div class="metric-node">
+                        <span class="metric-num">3.90</span>
+                        <span class="metric-lbl">Cumulative CGPA</span>
+                    </div>
+                    <div class="metric-node">
+                        <span class="metric-num">7th</span>
+                        <span class="metric-lbl">Semester BS CS</span>
+                    </div>
+                    <div class="metric-node">
+                        <span class="metric-num">03</span>
+                        <span class="metric-lbl">Live Systems</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="wrap">
-            <div class="section-head reveal">
-                <div>
-                    <span class="section-tag">02 — Projects</span>
-                    <h2>Selected Work</h2>
+    <section id="about" class="section-block">
+        <div class="hero-canvas-wrap">
+            <div class="asymmetric-layout-grid">
+                <div class="sticky-meta-col reveal">
+                    <span class="meta-index-num">// 01</span>
+                    <h2 class="section-title">Architectural Mindset</h2>
                 </div>
-                <p class="section-note">Functional applications deployed directly to live hosting instances.</p>
-            </div>
-
-            <div class="project-list reveal">
-                <div class="project-row">
-                    <span class="p-index">01</span>
-                    <div class="p-main">
-                        <h3>To-Do List Application</h3>
-                        <p>A clean, intuitive productivity application designed to manage everyday tasks. Built with a focus on seamless user experience, responsive layout structuring, and efficient state handling frameworks.</p>
-                    </div>
-                    <div class="p-tags">
-                        <span class="p-tag">HTML5</span>
-                        <span class="p-tag">CSS3</span>
-                        <span class="p-tag">Vercel Deployment</span>
-                    </div>
-                    <a href="https://your-todo-link.vercel.app" target="_blank" rel="noopener" class="p-link" aria-label="Open To-Do List Application">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11L11 4M11 4H5M11 4V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </a>
-                </div>
-
-                <div class="project-row">
-                    <span class="p-index">02</span>
-                    <div class="p-main">
-                        <h3>Custom Music Player</h3>
-                        <p>A custom web-based music streaming interface featuring layout mechanics for playlist management, active track nodes, and volume adjustments wrapped in an elegant dark interface.</p>
-                    </div>
-                    <div class="p-tags">
-                        <span class="p-tag">UI Design</span>
-                        <span class="p-tag">Audio State</span>
-                        <span class="p-tag">Production Build</span>
-                    </div>
-                    <a href="https://aura-player-pearl.vercel.app/" target="_blank" rel="noopener" class="p-link" aria-label="Open Custom Music Player">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11L11 4M11 4H5M11 4V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </a>
+                
+                <div class="narrative-content-col reveal">
+                    <p class="lead-text">I approach development as a synthesis of design precision and system stability, ensuring interfaces remain performant under scale.</p>
+                    <p>Currently in my 6th semester pursuing a Bachelor of Computer Science at MNSUAM, I continuously expand my engineering baseline by taking ownership of layout rendering mechanisms and cross-functional feature builds.</p>
+                    <p>My objective is to secure space within a forward-thinking software team where I can assume technical responsibility, write highly structured code, and contribute cleanly to live web systems.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-        <div class="wrap">
-            <div class="section-head reveal">
+    <section id="projects" class="section-block dark-shelf">
+        <div class="hero-canvas-wrap">
+            <div class="section-header-row reveal">
                 <div>
-                    <span class="section-tag">03 — Skills</span>
-                    <h2>Technical Proficiency</h2>
+                    <span class="meta-index-num">// 02</span>
+                    <h2 class="section-title">Engineering Showcases</h2>
                 </div>
-                <p class="section-note">Core technologies and professional soft execution strategies.</p>
+                <p class="section-context-note">Production code instances deployed directly onto live servers.</p>
             </div>
-            <div class="skills-grid">
-                <div class="skill-list reveal">
-                    <div class="skill-row">
-                        <div class="skill-row-top"><span>HTML5 &amp; CSS3 Layout Architecture</span><span>92%</span></div>
-                        <div class="bar-track"><div class="bar-fill" data-fill="92"></div></div>
+
+            <div class="matrix-grid-layout reveal">
+                <article class="matrix-card">
+                    <div class="card-inner-frame">
+                        <div class="card-header-meta">
+                            <span class="card-index-tag">Module Instance 01</span>
+                            <span class="sys-status">Live Deployed</span>
+                        </div>
+                        <h3 class="card-title-text">To-Do List Ecosystem</h3>
+                        <p class="card-desc-body">A high-performance productivity interface engineered to manage immediate operations cleanly. Implements granular local state persistence paradigms, custom animation cascades, and strict error checking structures.</p>
+                        <div class="card-tag-wrapper">
+                            <span>HTML5 Architecture</span>
+                            <span>CSS3 Tokens</span>
+                            <span>State Management</span>
+                        </div>
+                        <a href="https://to-do-list-seven-kohl-50.vercel.app" target="_blank" rel="noopener" class="card-action-anchor" aria-label="Deploy To-Do List instance link">
+                            <span>Execute Instance</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
                     </div>
-                    <div class="skill-row">
-                        <div class="skill-row-top"><span>UI / UX Design Precision</span><span>85%</span></div>
-                        <div class="bar-track"><div class="bar-fill" data-fill="85"></div></div>
+                </article>
+
+                <article class="matrix-card">
+                    <div class="card-inner-frame">
+                        <div class="card-header-meta">
+                            <span class="card-index-tag">Module Instance 02</span>
+                            <span class="sys-status">Live Deployed</span>
+                        </div>
+                        <h3 class="card-title-text">Aura Custom Audio Player</h3>
+                        <p class="card-desc-body">A bespoke client-side music streaming client managing system nodes dynamically. Built using custom range slider track masks, track configuration arrays, and context-driven audio state engine pipelines.</p>
+                        <div class="card-tag-wrapper">
+                            <span>Audio Node Web API</span>
+                            <span>DOM Manipulation</span>
+                            <span>M3 Component Design</span>
+                        </div>
+                        <a href="https://aura-player-pearl.vercel.app/" target="_blank" rel="noopener" class="card-action-anchor" aria-label="Launch Aura streaming player application">
+                            <span>Execute Instance</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
                     </div>
-                    <div class="skill-row">
-                        <div class="skill-row-top"><span>MongoDB Atlas Cloud Structures</span><span>50%</span></div>
-                        <div class="bar-track"><div class="bar-fill" data-fill="50"></div></div>
-                    </div>
-                </div>
-                <div class="soft-grid reveal">
-                    <span class="soft-chip">Leadership &amp; Team Management</span>
-                    <span class="soft-chip">Time Optimization Architecture</span>
-                    <span class="soft-chip">Strong Presentation Skills</span>
-                    <span class="soft-chip">Thrives Under System Pressure</span>
-                    <span class="soft-chip">Cross-Functional Communication</span>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <section id="education">
-        <div class="wrap">
-            <div class="section-head reveal">
-                <div>
-                    <span class="section-tag">04 — Education</span>
-                    <h2>Academic History</h2>
+    <section id="skills" class="section-block">
+        <div class="hero-canvas-wrap">
+            <div class="asymmetric-layout-grid">
+                <div class="sticky-meta-col reveal">
+                    <span class="meta-index-num">// 03</span>
+                    <h2 class="section-title">Technical Capabilities</h2>
+                    <p class="sub-annotation">Core technology proficiency vectors.</p>
                 </div>
-                <p class="section-note">Formal qualifications and performance tracking indices.</p>
-            </div>
-            <div class="timeline reveal">
-                <div class="t-item" data-detail="Maintaining excellent standing (CGPA 3.9/4.0) inside core topics like Algorithm design, Database Structures, and Software Methodologies.">
-                    <div class="t-date-col"><div class="yr">2023 — 2027</div><div class="status">● Ongoing</div></div>
-                    <div class="t-line-col"><div class="t-dot"></div></div>
-                    <div class="t-content-col">
-                        <h4>BS Computer Science</h4>
-                        <div class="t-sub">MNS University of Agriculture, Multan (MNSUAM)</div>
-                        <span class="t-view">View milestone details
-                            <svg viewBox="0 0 13 13" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
+                
+                <div class="capabilities-display-col reveal">
+                    <div class="metric-progress-ladder">
+                        <div class="ladder-step">
+                            <div class="step-meta-row"><span>HTML5 / CSS3 Semantic Layouts</span><span>92%</span></div>
+                            <div class="step-track-rail"><div class="step-fill-bar" data-fill="92"></div></div>
+                        </div>
+                        <div class="ladder-step">
+                            <div class="step-meta-row"><span>User Interface Architecture &amp; Logic</span><span>85%</span></div>
+                            <div class="step-track-rail"><div class="step-fill-bar" data-fill="85"></div></div>
+                        </div>
+                        <div class="ladder-step">
+                            <div class="step-meta-row"><span>MongoDB Atlas Cloud Relational Clusters</span><span>50%</span></div>
+                            <div class="step-track-rail"><div class="step-fill-bar" data-fill="50"></div></div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="t-item" data-detail="Completed core scientific coursework metrics with exceptional marks allocation (980 / 1100).">
-                    <div class="t-date-col"><div class="yr">2020 — 2022</div></div>
-                    <div class="t-line-col"><div class="t-dot"></div></div>
-                    <div class="t-content-col">
-                        <h4>Intermediate Engineering Credentials</h4>
-                        <div class="t-sub">Admire College Multan</div>
-                        <span class="t-view">View milestone details
-                            <svg viewBox="0 0 13 13" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="t-item" data-detail="Acquired early technical logic baselines, passing with an outstanding grade distribution (1013 / 1100).">
-                    <div class="t-date-col"><div class="yr">2018 — 2020</div></div>
-                    <div class="t-line-col"><div class="t-dot"></div></div>
-                    <div class="t-content-col">
-                        <h4>Matriculation Sciences</h4>
-                        <div class="t-sub">Aziz Public Model School</div>
-                        <span class="t-view">View milestone details
-                            <svg viewBox="0 0 13 13" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
+                    <div class="soft-execution-cluster">
+                        <span class="execution-tag-chip">Leadership &amp; Team Management</span>
+                        <span class="execution-tag-chip">Time Optimization Architecture</span>
+                        <span class="execution-tag-chip">Strong Presentation Skills</span>
+                        <span class="execution-tag-chip">Thrives Under System Pressure</span>
+                        <span class="execution-tag-chip">Cross-Functional Communication</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="certificates">
-        <div class="wrap">
-            <div class="section-head reveal">
+    <section id="education" class="section-block light-shelf">
+        <div class="hero-canvas-wrap">
+            <div class="section-header-row reveal">
                 <div>
-                    <span class="section-tag">05 — Verification</span>
-                    <h2>Certificates &amp; Training</h2>
+                    <span class="meta-index-num">// 04</span>
+                    <h2 class="section-title">Academic Education</h2>
                 </div>
-                <p class="section-note">Click any certificate element below to launch the media verification modal window.</p>
+                <p class="section-context-note">Formal institutional background benchmarks.</p>
             </div>
-            <div class="timeline reveal">
-                <div class="t-item open-cert-trigger" data-img-src="knn-cert.png">
-                    <div class="t-date-col"><div class="yr">May 2026</div></div>
-                    <div class="t-line-col"><div class="t-dot"></div></div>
-                    <div class="t-content-col">
-                        <h4>KNN Algorithm in Python and R</h4>
-                        <div class="t-sub">Analytics Vidhya — Mastered KNN multi-dimensional classifiers and distance-matrix evaluations.</div>
-                        <span class="t-view">Launch image node preview
-                            <svg viewBox="0 0 13 13" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
+
+            <div class="split-timeline-rail reveal">
+                <div class="rail-item modal-trigger-node" data-context="academic" data-summary="Enrolled in computer science baseline training matrices, maintaining an honor roll position with high performance profiles inside data structures, networking, and system design files.">
+                    <div class="rail-timestamp">2023 — 2027</div>
+                    <div class="rail-content-box">
+                        <span class="rail-category-tag">Formal Bachelor's Degree</span>
+                        <h3>BS Computer Science (Ongoing)</h3>
+                        <span class="rail-organization-sub">MNS University of Agriculture, Multan (MNSUAM)</span>
+                        <div class="interactive-prompt-link">Inspect degree vectors ↗</div>
                     </div>
                 </div>
 
-                <div class="t-item open-cert-trigger" data-img-src="web certificate.png">
-                    <div class="t-date-col"><div class="yr">Apr 2026</div></div>
-                    <div class="t-line-col"><div class="t-dot"></div></div>
-                    <div class="t-content-col">
-                        <h4>Web Development Fundamentals</h4>
-                        <div class="t-sub">Arch Tech Internship Platform — Deep dive into layouts, modular stylesheets, and cross-browser accessibility paradigms.</div>
-                        <span class="t-view">Launch image node preview
-                            <svg viewBox="0 0 13 13" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
+                <div class="rail-item modal-trigger-node" data-context="academic" data-summary="Acquired exceptional scores metrics allocation profile across primary scientific coursework modules, logging a definitive 980 / 1100.">
+                    <div class="rail-timestamp">2020 — 2022</div>
+                    <div class="rail-content-box">
+                        <span class="rail-category-tag">Higher Secondary Credentials</span>
+                        <h3>Intermediate Science Certification</h3>
+                        <span class="rail-organization-sub">Admire College Multan</span>
+                        <div class="interactive-prompt-link">Inspect academic records ↗</div>
                     </div>
                 </div>
 
-                <div class="t-item open-cert-trigger" data-img-src="Html certificate.png">
-                    <div class="t-date-col"><div class="yr">Jun 2026</div></div>
-                    <div class="t-line-col"><div class="t-dot"></div></div>
-                    <div class="t-content-col">
-                        <h4>Learn HTML: Build Your First Website from Scratch</h4>
-                        <div class="t-sub">LearnKartS via Coursera — Acquired comprehensive mastery of document structures, semantic markup, and deployment workflows.</div>
-                        <span class="t-view">Launch image node preview
-                            <svg viewBox="0 0 13 13" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
+                <div class="rail-item modal-trigger-node" data-context="academic" data-summary="Early scientific basic principles and baseline logic validation metrics, finishing with 1013 / 1100 marks allocation.">
+                    <div class="rail-timestamp">2018 — 2020</div>
+                    <div class="rail-content-box">
+                        <span class="rail-category-tag">Secondary School Education</span>
+                        <h3>Matriculation Sciences</h3>
+                        <span class="rail-organization-sub">Aziz Public Model School</span>
+                        <div class="interactive-prompt-link">Inspect academic records ↗</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="wrap">
-            <div class="contact-block">
-                <div class="reveal">
-                    <span class="section-tag">06 — Channel</span>
-                    <h2>Let's connect <span class="it">something</span> worth shipping.</h2>
+    <section id="experience" class="section-block light-shelf">
+        <div class="hero-canvas-wrap">
+            <div class="section-header-row reveal">
+                <div>
+                    <span class="meta-index-num">// 05</span>
+                    <h2 class="section-title">Experience &amp; Certifications</h2>
                 </div>
-                <div class="contact-list reveal">
-                    <div class="contact-row">
-                        <div class="c-label"><span>Email Target Node</span><span>amamaazizchishtie@gmail.com</span></div>
-                        <button class="copy-btn" data-copy="amamaazizchishtie@gmail.com">Copy Address</button>
+                <p class="section-context-note">Industry training verification tokens and live internship milestones.</p>
+            </div>
+
+            <div class="split-timeline-rail reveal">
+                <div class="rail-item modal-trigger-node" data-context="work" data-summary="Completed an intensive 8-week remote technical internship track in frontend web engineering with Arch Tech. Assumed ownership of rendering features, performance optimization metrics, and cross-browser accessibility paradigms.">
+                    <div class="rail-timestamp">8 Weeks Track</div>
+                    <div class="rail-content-box">
+                        <span class="rail-category-tag">Professional Internship</span>
+                        <h3>Web Development Internship</h3>
+                        <span class="rail-organization-sub">Arch Tech (Remote Engineering Frameworks)</span>
+                        <div class="interactive-prompt-link">Inspect verification records ↗</div>
                     </div>
-                    <div class="contact-row">
-                        <div class="c-label"><span>LinkedIn Platform</span><span>linkedin.com/in/amama-aziz</span></div>
-                        <a href="https://www.linkedin.com/in/amama-aziz" target="_blank" rel="noopener" class="copy-btn">Open Hub ↗</a>
+                </div>
+
+                <div class="rail-item certificate-trigger-node" data-img-target="Html certificate.png" data-summary="LearnKartS via Coursera — Verified structural document generation capabilities, semantic elements hierarchy rules, and native compilation paradigms.">
+                    <div class="rail-timestamp">Jun 2026</div>
+                    <div class="rail-content-box">
+                        <span class="rail-category-tag">Verified Coursework</span>
+                        <h3>Learn HTML: Build Your First Website from Scratch</h3>
+                        <span class="rail-organization-sub">LearnKartS — Coursera Verification Platform</span>
+                        <div class="interactive-prompt-link">Launch image credential view ↗</div>
                     </div>
-                    <div class="contact-row">
-                        <div class="c-label"><span>GitHub Hub Node</span><span>github.com/</span></div>
-                        <a href="https://github.com/" target="_blank" rel="noopener" class="copy-btn">Open Hub ↗</a>
+                </div>
+
+                <div class="rail-item certificate-trigger-node" data-img-target="knn-cert.png" data-summary="Analytics Vidhya — Attained theoretical mathematical core logic vectors and runtime programming scripts implementation capabilities for KNN classification arrays.">
+                    <div class="rail-timestamp">May 2026</div>
+                    <div class="rail-content-box">
+                        <span class="rail-category-tag">Specialization Track</span>
+                        <h3>KNN Algorithm in Python and R</h3>
+                        <span class="rail-organization-sub">Analytics Vidhya Credentials Stream</span>
+                        <div class="interactive-prompt-link">Launch image credential view ↗</div>
                     </div>
-                    <div class="contact-row">
-                        <div class="c-label"><span>Instagram Social</span><span>instagram.com/amama._aziz</span></div>
-                        <a href="https://www.instagram.com/amama._aziz" target="_blank" rel="noopener" class="copy-btn">Open Link ↗</a>
+                </div>
+
+                <div class="rail-item certificate-trigger-node" data-img-target="web certificate.png" data-summary="Arch Tech Framework Platforms — Intensive focus on scalable frontend styling mechanics, layout viewports handling, and collaborative production execution.">
+                    <div class="rail-timestamp">Apr 2026</div>
+                    <div class="rail-content-box">
+                        <span class="rail-category-tag">Technical Training</span>
+                        <h3>Web Development Fundamentals</h3>
+                        <span class="rail-organization-sub">Arch Tech Platform Engine</span>
+                        <div class="interactive-prompt-link">Launch image credential view ↗</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-block">
+        <div class="hero-canvas-wrap">
+            <div class="asymmetric-layout-grid">
+                <div class="sticky-meta-col reveal">
+                    <span class="meta-index-num">// 06</span>
+                    <h2 class="section-title">Initiate Transmission</h2>
+                    <p class="sub-annotation">Direct pipelines to secure collaboration frameworks.</p>
+                </div>
+                
+                <div class="connections-wrapper reveal">
+                    <p class="connections-lead-text">I am currently processing requests for internship programs, frontend development roles, and cross-functional engineering teams entries.</p>
+                    
+                    <div class="interactive-comms-card">
+                        <div class="comms-line-row">
+                            <div class="comms-meta-desc">
+                                <span class="comms-title">Secure Electronic Mail</span>
+                                <span class="comms-address">amamaazizchishtie@gmail.com</span>
+                            </div>
+                            <button class="comms-action-btn" data-clipboard-action="amamaazizchishtie@gmail.com">Copy Interface Address</button>
+                        </div>
+
+                        <div class="comms-line-row">
+                            <div class="comms-meta-desc">
+                                <span class="comms-title">LinkedIn Connection Node</span>
+                                <span class="comms-address">linkedin.com/in/amama-aziz</span>
+                            </div>
+                            <a href="https://www.linkedin.com/in/amama-aziz" target="_blank" rel="noopener" class="comms-action-btn">Open Pipeline ↗</a>
+                        </div>
+
+                        <div class="comms-line-row">
+                            <div class="comms-meta-desc">
+                                <span class="comms-title">GitHub Version Space</span>
+                                <span class="comms-address">github.com/</span>
+                            </div>
+                            <a href="https://github.com/" target="_blank" rel="noopener" class="comms-action-btn">Open Pipeline ↗</a>
+                        </div>
+
+                        <div class="comms-line-row">
+                            <div class="comms-meta-desc">
+                                <span class="comms-title">Instagram Social Hub</span>
+                                <span class="comms-address">instagram.com/amama._aziz</span>
+                            </div>
+                            <a href="https://www.instagram.com/amama._aziz" target="_blank" rel="noopener" class="comms-action-btn">Open Link ↗</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,44 +328,45 @@
     </section>
 </main>
 
-<a href="amama_aziz_cv.pdf" download="Amama-Aziz-CV.pdf" class="resume-fab" id="resumeFab" aria-label="Download Curriculum Vitae Document">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4M7 10l5 5 5-5M12 15V3"/></svg>
-    <span class="fab-text">CV</span>
+<a href="amama_aziz_cv.pdf" download="Amama-Aziz-CV.pdf" class="action-fab-dock" id="resumeFab" aria-label="Download Curriculum Vitae Document">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4M7 10l5 5 5-5M12 15V3"/></svg>
+    <span class="fab-label-string">Get CV</span>
 </a>
 
-<div class="modal-backdrop" id="modalBackdrop">
-    <div class="glass modal-box">
-        <button class="modal-close" id="modalClose" aria-label="Close modal container">&times;</button>
-        <span class="modal-tag">Credential Node</span>
-        <h4 id="modalTitle">Verification Frame</h4>
-        <p id="modalDesc"></p>
-        <div class="modal-img-container">
-            <img class="modal-content" id="img01" alt="Verification Data Resource Stream">
+<div class="viewport-modal-backdrop" id="systemModalBackdrop">
+    <div class="glass-substrate modal-sheet-box">
+        <button class="action-modal-close" id="modalClose" aria-label="Purge view node sheet">&times;</button>
+        <span class="modal-index-flag">System Index Token</span>
+        <h4 id="modalHeaderTitle">Verification Block Header</h4>
+        <p id="modalMainDescription"></p>
+        <div class="modal-image-render-frame">
+            <img class="inner-image-asset" id="modalImageNode" alt="Binary Credential Image Asset Stream View">
         </div>
     </div>
 </div>
 
-<footer>
-    <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
-        <span>Designed &amp; built by <strong>Amama Aziz</strong> · © 2026</span>
-        <a href="#" class="footer-top-link" id="toTop">Back to top 
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 10V3M6.5 3L3 6.5M6.5 3L10 6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<footer class="footer-block">
+    <div class="hero-canvas-wrap footer-flex-split">
+        <span class="copyright-string">Amama Aziz — System Architecture Deployed · 2026</span>
+        <a href="#" class="scroll-up-trigger" id="toTop">
+            <span>Scroll to baseline top</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 12V2M7 2L3 6M7 2L11 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
     </div>
 </footer>
 
 <script>
-/* ===== Scroll Reveal Animations ===== */
+/* ===== Scroll Reveal Animations Pipeline ===== */
 (function(){
     const items = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries)=>{
         entries.forEach(e=>{
             if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
         });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1 });
     items.forEach(i=>io.observe(i));
 
-    const bars = document.querySelectorAll('.bar-fill');
+    const bars = document.querySelectorAll('.step-fill-bar');
     const barIo = new IntersectionObserver((entries)=>{
         entries.forEach(e=>{
             if(e.isIntersecting){
@@ -346,46 +374,45 @@
                 barIo.unobserve(e.target);
             }
         });
-    }, { threshold: 0.4 });
+    }, { threshold: 0.3 });
     bars.forEach(b=>barIo.observe(b));
 })();
 
-/* ===== Mobile Navigation Sheet State ===== */
+/* ===== Floating Navigation Toggle Execution ===== */
 (function(){
     const toggle = document.getElementById('navToggle');
     const links = document.getElementById('navLinks');
     toggle.addEventListener('click', ()=>{
         const open = links.classList.toggle('open');
         toggle.setAttribute('aria-expanded', open);
+        toggle.classList.toggle('active');
     });
     links.querySelectorAll('a').forEach(a=>{
-        a.addEventListener('click', ()=> links.classList.remove('open'));
+        a.addEventListener('click', ()=> { links.classList.remove('open'); toggle.classList.remove('active'); });
     });
 })();
 
-/* ===== Integrated Timeline & Certificate Modal Module ===== */
+/* ===== Micro Modal Multi-Target Persistent Node Engine ===== */
 (function(){
-    const backdrop = document.getElementById('modalBackdrop');
+    const backdrop = document.getElementById('systemModalBackdrop');
     const closeBtn = document.getElementById('modalClose');
-    const titleEl = document.getElementById('modalTitle');
-    const descEl = document.getElementById('modalDesc');
-    const imageEl = document.getElementById('img01');
+    const headEl = document.getElementById('modalHeaderTitle');
+    const descEl = document.getElementById('modalMainDescription');
+    const imageEl = document.getElementById('modalImageNode');
 
-    document.querySelectorAll('.t-item:not(.open-cert-trigger)').forEach(item=>{
-        item.querySelector('.t-content-col').addEventListener('click', ()=>{
-            titleEl.textContent = item.querySelector('h4').textContent;
-            descEl.textContent = item.dataset.detail || '';
-            imageEl.style.display = 'none'; 
-            backdrop.classList.add('open');
-        });
-    });
-
-    document.querySelectorAll('.open-cert-trigger').forEach(item=>{
-        item.querySelector('.t-content-col').addEventListener('click', ()=>{
-            titleEl.textContent = item.querySelector('h4').textContent;
-            descEl.textContent = item.querySelector('.t-sub').textContent;
-            imageEl.src = item.dataset.imgSrc || '';
-            imageEl.style.display = 'block'; 
+    document.querySelectorAll('.rail-item').forEach(item => {
+        item.addEventListener('click', () => {
+            headEl.textContent = item.querySelector('h3').textContent;
+            
+            if (item.classList.contains('certificate-trigger-node')) {
+                descEl.textContent = item.dataset.summary || '';
+                imageEl.src = item.dataset.imgTarget || '';
+                imageEl.style.display = 'block';
+            } else {
+                descEl.textContent = item.dataset.summary || '';
+                imageEl.style.display = 'none';
+                imageEl.src = '';
+            }
             backdrop.classList.add('open');
         });
     });
@@ -396,13 +423,45 @@
     document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') close(); });
 })();
 
-/* ===== Interactive Particle Canvas Pipeline ===== */
+/* ===== Copy To Clipboard Command Pipeline ===== */
+(function(){
+    document.querySelectorAll('.comms-action-btn[data-clipboard-action]').forEach(btn=>{
+        btn.addEventListener('click', async ()=>{
+            const val = btn.dataset.clipboardAction;
+            try{
+                await navigator.clipboard.writeText(val);
+                const original = btn.textContent;
+                btn.textContent = 'Data Copied';
+                btn.classList.add('copied');
+                setTimeout(()=>{ btn.textContent = original; btn.classList.remove('copied'); }, 1800);
+            }catch(e){}
+        });
+    });
+})();
+
+/* ===== FAB Scroll Pipeline Logic ===== */
+(function(){
+    const fabNode = document.getElementById('resumeFab');
+    const topTrigger = document.getElementById('toTop');
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) { fabNode.classList.add('visible'); } 
+        else { fabNode.classList.remove('visible'); }
+    });
+
+    topTrigger.addEventListener('click', (e)=>{
+        e.preventDefault();
+        window.scrollTo({ top:0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    });
+})();
+
+/* ===== Canvas Particle Grid Pipeline Engine ===== */
 (function(){
     const canvas = document.getElementById('bgCanvas');
     const ctx = canvas.getContext('2d');
     let particlesArray = [];
-    const numberOfParticles = 65;
-    let interactionPoint = { x: null, y: null, radius: 130 };
+    const numberOfParticles = 55;
+    let interactionPoint = { x: null, y: null, radius: 140 };
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
@@ -421,8 +480,8 @@
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
             this.size = Math.random() * 2 + 1;
-            this.speedX = (Math.random() * 0.4) - 0.2;
-            this.speedY = (Math.random() * 0.4) - 0.2;
+            this.speedX = (Math.random() * 0.3) - 0.15;
+            this.speedY = (Math.random() * 0.3) - 0.15;
         }
         update() {
             this.x += this.speedX;
@@ -436,13 +495,13 @@
                 let distance = Math.sqrt(dx * dx + dy * dy);
                 if (distance < interactionPoint.radius) {
                     let force = (interactionPoint.radius - distance) / interactionPoint.radius;
-                    this.x += (dx / distance) * force * 3;
-                    this.y += (dy / distance) * force * 3;
+                    this.x += (dx / distance) * force * 2.5;
+                    this.y += (dy / distance) * force * 2.5;
                 }
             }
         }
         draw() {
-            ctx.fillStyle = 'rgba(46, 182, 149, 0.2)'; 
+            ctx.fillStyle = 'rgba(197, 137, 85, 0.2)'; 
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.fill();
@@ -461,10 +520,10 @@
                 let dx = particlesArray[a].x - particlesArray[b].x;
                 let dy = particlesArray[a].y - particlesArray[b].y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
-                if (distance < 110) {
-                    let opacityValue = (1 - (distance / 110)) * 0.1;
-                    ctx.strokeStyle = `rgba(46, 182, 149, ${opacityValue})`;
-                    ctx.lineWidth = 0.8;
+                if (distance < 120) {
+                    let opacityValue = (1 - (distance / 120)) * 0.12;
+                    ctx.strokeStyle = `rgba(102, 126, 234, ${opacityValue})`; 
+                    ctx.lineWidth = 0.7;
                     ctx.beginPath();
                     ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
                     ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
@@ -484,38 +543,6 @@
         requestAnimationFrame(animate);
     }
     animate();
-})();
-
-/* ===== Copy to Clipboard Pipeline ===== */
-(function(){
-    document.querySelectorAll('.copy-btn[data-copy]').forEach(btn=>{
-        btn.addEventListener('click', async ()=>{
-            const val = btn.dataset.copy;
-            try{
-                await navigator.clipboard.writeText(val);
-                const original = btn.textContent;
-                btn.textContent = 'Copied';
-                btn.classList.add('copied');
-                setTimeout(()=>{ btn.textContent = original; btn.classList.remove('copied'); }, 1800);
-            }catch(e){}
-        });
-    });
-})();
-
-/* ===== FAB Visibility Control ===== */
-(function(){
-    const fabNode = document.getElementById('resumeFab');
-    const link = document.getElementById('toTop');
-    
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) { fabNode.classList.add('visible'); } 
-        else { fabNode.classList.remove('visible'); }
-    });
-
-    link.addEventListener('click', (e)=>{
-        e.preventDefault();
-        window.scrollTo({ top:0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    });
 })();
 </script>
 
