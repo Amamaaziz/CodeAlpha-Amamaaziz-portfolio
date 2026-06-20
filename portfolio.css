@@ -1,24 +1,20 @@
 :root {
-  /* ---- Visual Token Override System: Midnight Indigo & Burnished Copper ---- */
-  --bg-deep: #0B0D19;           /* Velvet Indigo Void Base */
-  --bg-surface: #121526;        /* M3 Secondary Structural Surfaces */
-  --bg-surface-raised: #1A1E36; /* Elevated Component Focus Fill Layers */
+  --bg-deep: #0B0D19;           
+  --bg-surface: #121526;        
+  --bg-surface-raised: #1A1E36; 
   --border-subtle: rgba(102, 126, 234, 0.09);
   --border-strong: rgba(102, 126, 234, 0.22);
   
-  /* Core Brand Active Accent Rails */
-  --accent-indigo: #667EEA;     /* Dynamic High-Contrast Indigo Primary */
-  --accent-copper: #C58955;     /* Warm Burnished Industrial Copper Accents */
+  --accent-indigo: #667EEA;     
+  --accent-copper: #C58955;     
   --accent-copper-dim: rgba(197, 137, 85, 0.08);
   --accent-copper-line: rgba(197, 137, 85, 0.35);
   --action-success: #48BB78;
   
-  /* High Legibility Geometric Typography Scale */
-  --text-high: #F3F4F6;         /* Clear Primary Header Display Labels */
-  --text-medium: #A0AEC0;       /* Standard Sub-Section Body Paragraph Strings */
-  --text-muted: #4A5568;        /* System Metadata Annotation Index Tokens */
+  --text-high: #F3F4F6;         
+  --text-medium: #A0AEC0;       
+  --text-muted: #4A5568;        
   
-  /* Premium Motion Interpolation Coefficients */
   --ease-m3: cubic-bezier(0.16, 1, 0.3, 1);
   --font-display: 'Space Grotesk', -apple-system, sans-serif;
   --font-body: 'DM Sans', sans-serif;
@@ -27,7 +23,6 @@
   --radius-md: 10px;
 }
 
-/* ---------- Global Baseline Overrides ---------- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -43,7 +38,6 @@ a { color: inherit; text-decoration: none; }
 
 .hero-canvas-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 5; }
 
-/* ---------- Dynamic Particle Matrix Canvas Positioning ---------- */
 #bgCanvas {
   position: fixed; inset: 0; z-index: 0; pointer-events: none;
   mask-image: radial-gradient(circle at 50% 30%, black 30%, transparent 85%);
@@ -61,7 +55,6 @@ a { color: inherit; text-decoration: none; }
   border-radius: var(--radius-xl);
 }
 
-/* ---------- FLOATING ASYMMETRIC GLASS Nav Shelf ---------- */
 .header-floating {
   position: fixed; top: 24px; left: 0; width: 100%; z-index: 100;
   pointer-events: none;
@@ -93,7 +86,6 @@ a { color: inherit; text-decoration: none; }
 .action-link-cta:hover { background: var(--accent-copper); transform: translateY(-1px); }
 .menu-trigger { display: none; }
 
-/* ---------- Action Framework UI Buttons ---------- */
 .ui-btn {
   display: inline-flex; align-items: center; justify-content: center;
   padding: 14px 28px; border-radius: 30px; font-family: var(--font-display);
@@ -104,11 +96,9 @@ a { color: inherit; text-decoration: none; }
 .ui-btn-outline { background: transparent; border: 1px solid var(--border-strong); color: var(--text-high); }
 .ui-btn-outline:hover { border-color: var(--accent-indigo); color: var(--accent-indigo); background: rgba(102, 126, 234, 0.02); }
 
-/* ---------- Scroll Reveal Cascades ---------- */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.85s var(--ease-m3), transform 0.85s var(--ease-m3); }
 .reveal.in { opacity: 1; transform: translateY(0); }
 
-/* ---------- ASYMMETRIC FULL STACK HERO LAYOUT ---------- */
 .hero-split { padding: 180px 0 110px; border-bottom: 1px solid var(--border-subtle); position: relative; }
 .badge-tag {
   display: inline-block; font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-copper);
@@ -128,7 +118,6 @@ a { color: inherit; text-decoration: none; }
 .metric-num { font-family: var(--font-display); font-size: 2.2rem; color: var(--text-high); font-weight: 700; line-height: 1; margin-bottom: 6px; }
 .metric-lbl { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500; }
 
-/* ---------- General Segment Layout Settings ---------- */
 .section-block { padding: 110px 0; border-bottom: 1px solid var(--border-subtle); }
 .asymmetric-layout-grid { display: grid; grid-template-columns: 320px 1fr; gap: 64px; }
 .sticky-meta-col { position: sticky; top: 120px; }
@@ -140,11 +129,9 @@ a { color: inherit; text-decoration: none; }
 .narrative-content-col p:last-child { margin-bottom: 0; }
 .narrative-content-col p.lead-text { font-size: 1.3rem; color: var(--text-high); font-weight: 500; line-height: 1.5; }
 
-/* ---------- SECTION HEADER CONFIG ---------- */
 .section-header-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 56px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 24px; }
 .section-context-note { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); max-width: 260px; text-align: right; }
 
-/* ---------- INTERACTIVE PROJECT MASONRY MATRIX GRID ---------- */
 .matrix-grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 32px; }
 .matrix-card { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); transition: all 0.35s var(--ease-m3); }
 .card-inner-frame { padding: 40px; display: flex; flex-direction: column; height: 100%; }
@@ -164,7 +151,6 @@ a { color: inherit; text-decoration: none; }
 .matrix-card:hover .card-action-anchor { color: var(--accent-copper); }
 .matrix-card:hover .card-action-anchor svg { transform: translate(2px, -2px); }
 
-/* ---------- CAPABILITIES PROGRESS DESIGN ---------- */
 .metric-progress-ladder { display: flex; flex-direction: column; gap: 24px; margin-bottom: 48px; max-width: 720px; }
 .ladder-step { display: flex; flex-direction: column; gap: 10px; }
 .step-meta-row { display: flex; justify-content: space-between; font-size: 0.92rem; font-weight: 500; color: var(--text-high); }
@@ -176,7 +162,6 @@ a { color: inherit; text-decoration: none; }
 .execution-tag-chip { padding: 10px 18px; border-radius: 20px; border: 1px solid var(--border-subtle); font-size: 0.86rem; color: var(--text-medium); transition: all 0.2s var(--ease-m3); }
 .execution-tag-chip:hover { border-color: var(--accent-copper-line); color: var(--accent-copper); background: var(--accent-copper-dim); }
 
-/* ---------- RADIAL TIMELINE ---------- */
 .split-timeline-rail { position: relative; max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
 .rail-item { display: grid; grid-template-columns: 160px 1fr; gap: 32px; align-items: start; padding: 24px; border-radius: var(--radius-lg); border: 1px solid transparent; transition: all 0.25s var(--ease-m3); cursor: pointer; }
 .rail-timestamp { font-family: var(--font-mono); font-size: 0.95rem; color: var(--accent-copper); font-weight: 600; padding-top: 4px; }
@@ -189,7 +174,6 @@ a { color: inherit; text-decoration: none; }
 .rail-item:hover h3 { color: var(--accent-copper); }
 .rail-item:hover .interactive-prompt-link { color: var(--text-high); }
 
-/* ---------- INTERACTIVE COMMUNICATIVE PLATFORM CARD ---------- */
 .connections-wrapper { max-width: 720px; }
 .connections-lead-text { font-size: 1.15rem; color: var(--text-high); margin-bottom: 36px; line-height: 1.5; }
 .interactive-comms-card { display: flex; flex-direction: column; border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); background: rgba(18,21,38,0.3); overflow: hidden; }
@@ -204,7 +188,6 @@ a { color: inherit; text-decoration: none; }
 .comms-action-btn:hover { border-color: var(--accent-copper-line); color: var(--accent-copper); background: var(--accent-copper-dim); }
 .comms-action-btn.copied { color: var(--action-success); border-color: rgba(72, 187, 120, 0.3); background: rgba(72, 187, 120, 0.05); }
 
-/* ---------- CREDENTIAL INTERACTIVE MODAL ---------- */
 .viewport-modal-backdrop { position: fixed; inset: 0; background: rgba(7, 8, 15, 0.85); backdrop-filter: blur(10px); display: none; align-items: center; justify-content: center; z-index: 200; padding: 24px; opacity: 0; transition: opacity 0.25s var(--ease-m3); }
 .viewport-modal-backdrop.open { display: flex; opacity: 1; }
 .modal-sheet-box { max-width: 580px; width: 100%; padding: 40px; transform: scale(0.95); transition: transform 0.25s var(--ease-m3); position: relative; }
@@ -218,20 +201,17 @@ a { color: inherit; text-decoration: none; }
 .modal-image-render-frame { width: 100%; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); background: #070912; margin-top: 16px; }
 .inner-image-asset { width: 100%; height: auto; display: block; object-fit: contain; }
 
-/* ---------- ACTION FAB CONTROL SYSTEM ---------- */
 .action-fab-dock { position: fixed; bottom: 32px; right: -120px; background: var(--accent-copper); color: var(--bg-deep); padding: 12px 20px; border-radius: 30px; font-weight: bold; display: flex; align-items: center; gap: 8px; z-index: 90; font-size: 0.9rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); font-family: var(--font-display); transition: right 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.2s var(--ease-m3); }
 .action-fab-dock.visible { right: 32px; }
 .action-fab-dock:hover { transform: translateY(-2px) scale(1.02); background: #df9e66; }
 .fab-label-string { font-weight: 700; letter-spacing: 0.02em; }
 
-/* ---------- FOOTER SYSTEM ---------- */
 .footer-block { border-top: 1px solid var(--border-subtle); padding: 36px 0; font-size: 0.82rem; color: var(--text-muted); font-family: var(--font-mono); }
 .footer-flex-split { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
 .copyright-string strong { color: var(--text-medium); }
 .scroll-up-trigger { display: inline-flex; align-items: center; gap: 8px; color: var(--text-muted); transition: color 0.2s var(--ease-m3); }
 .scroll-up-trigger:hover { color: var(--accent-copper); }
 
-/* ---------- FLUID RESPONSIVE GRID CONFIGURATIONS ---------- */
 @media (max-width: 980px) {
   .hero-footer-grid { grid-template-columns: 1fr; gap: 40px; }
   .metrics-panel-block { border-left: none; padding-left: 0; border-top: 1px solid var(--border-subtle); padding-top: 32px; gap: 32px; }
